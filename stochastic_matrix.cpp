@@ -4,7 +4,9 @@
 
 #include <vector>
 #include "stochastic_matrix.hpp"
-
+/*
+ * stochastic matrix constructor
+ */
 stochastic_matrix::stochastic_matrix(connectivity_matrix cm) :matrix(cm.getNum_row(),cm.getNum_col()){
     vector<double> sum_col;
     for (int col = 0; col <cm.getNum_col(); ++col) {

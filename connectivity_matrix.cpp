@@ -4,7 +4,11 @@
 
 #include <vector>
 #include "connectivity_matrix.hpp"
-
+/*
+ * connectivity_matrix with sigle array and size
+ * @param double_array is double array store element
+ * @pram size is the size of the array
+ */
 connectivity_matrix::connectivity_matrix(double *double_array,int size) : matrix(double_array,size) {
     for (int i{0}; i < sizeof(double_array); ++i)
     {
@@ -17,7 +21,9 @@ connectivity_matrix::connectivity_matrix(double *double_array,int size) : matrix
         }
     }
 }
-
+/*
+ * connectivity_matrix constructor with file path
+ */
 connectivity_matrix::connectivity_matrix(string FILE_PATH) {
     ifstream ifs(FILE_PATH);
     vector<double> double_array;

@@ -20,7 +20,7 @@ private:
     vector<vector<double>> container;
 public:
     void setContainer(double **container);
-
+    static constexpr double tolerance = 0.00001;
 private:
     int num_row;
     int num_col;
@@ -29,7 +29,7 @@ public:
     void setNum_row(int num_row);
     int getNum_col() const;
     int getNum_row() const;
-    static const double tolerance;    // Static tolerance when comparing doubles
+
     matrix(const matrix& copy);
     matrix();//init 1x1 matrix with 0.0
     matrix(int n);//n x n with 0.0, exception <=0
