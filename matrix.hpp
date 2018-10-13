@@ -16,7 +16,6 @@ using namespace std;
 
 class matrix{
 private:
-//    double ** container;
     vector<vector<double>> container;
 public:
     void setContainer(double **container);
@@ -36,7 +35,6 @@ public:
     matrix(int r, int c);// r x c, with 0s, exception <=0
     matrix(double intArray[],int size);// exception size is not n^2
     ~matrix();
-//    double** generateMatrix(int r, int c);
     vector<vector<double>> generateMatrix(int r, int c);
     void set_value(int r, int c,double value);//exception <=0 or too large
     double get_value(int r,int c) const;//exception <=0 , or too large
@@ -57,8 +55,7 @@ public:
     friend matrix operator -(matrix lhs, const matrix& rhs);
     matrix& operator *=(const matrix& rhs);
     friend matrix operator * (matrix lhs, const matrix& rhs);
-//    matrix& operator *=(const int& rhs);
-//    friend matrix operator * (int lhs, const matrix& rhs);
+
 
 };
 
