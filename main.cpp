@@ -11,7 +11,6 @@ using namespace std;
 int main() {
     const double probability =0.85;
 
-
     connectivity_matrix connectivity_matrix1("connectivity.txt");
     cout<<"generating connectivity"<<"\n";
 

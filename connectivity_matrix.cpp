@@ -9,6 +9,7 @@
  * @param double_array is double array store element
  * @pram size is the size of the array
  */
+
 connectivity_matrix::connectivity_matrix(double *double_array,int size) : matrix(double_array,size) {
     for (int i{0}; i < sizeof(double_array); ++i)
     {

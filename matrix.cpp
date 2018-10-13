@@ -5,7 +5,7 @@
 #include <iomanip>
 #include "matrix.hpp"
 //tolerance is mini
-
+constexpr double INIT_VALUE_ZERO = 0.0;
 /*
  * this is copy constructor
  * PRE: Parameters must be a matrix object
@@ -92,7 +92,7 @@ matrix::~matrix() {
 void matrix::clear() {
     for (int i = 0; i < num_row; ++i) {
         for (int j = 0; j < num_col; ++j) {
-            container[i][j]=0.0;
+            container[i][j]=INIT_VALUE_ZERO;
         }
     }
 }
